@@ -1,0 +1,109 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.nav-logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  background-color: rgba(250, 243, 243, 0.849);
+}
+#nav ul {
+  list-style-type: none;
+  display: block;
+  height: 0px;
+  transition: all 1.3s ease-in-out;
+}
+.show {
+  height: 232px !important;
+}
+
+nav .fas {
+  font-size: 45px;
+  color: rgb(211, 71, 99);
+  transition: all 1s ease-in-out;
+}
+.toggle {
+  display: none;
+}
+
+nav .fas:hover {
+  color: rgba(230, 44, 236, 0.89);
+}
+
+.nav-logo {
+  padding: 10px 5px;
+}
+#nav .nav-links a {
+  text-decoration: none;
+  font-size: 23px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  color: rgb(211, 71, 99);
+  font-weight: 400;
+  display: block;
+  transition: all 1.3s ease-in-out;
+}
+
+#nav .nav-links a:hover {
+  background: rgb(211, 71, 99);
+  color: rgba(250, 243, 243, 0.849);
+}
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  background-image: url(./pexels-teejay-1362534.jpg);
+  flex: 1 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 20px;
+}
+
+.big-img {
+  min-width: 65vw;
+  height: 55vh;
+}
+.big-img img {
+  height: 100%;
+}
+body {
+  background-color: cyan;
+}
+.content-container {
+  align-self: center;
+}
+.header-container h1 {
+  font-size: 60px;
+  color: rgba(250, 243, 243, 0.849);
+}
+.big-img {
+  align-self: center;
+}
+@media screen and (min-width: 823px) {
+  .fas {
+    display: none;
+  }
+  #nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  #nav ul {
+    height: auto !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #nav ul li {
+    display: inline-block;
+    padding: 5px 10px;
+  }
+}

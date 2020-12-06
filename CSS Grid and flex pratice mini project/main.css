@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+.item {
+  flex: 0 0 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.item-1 {
+  background-image: url(https://i2.wp.com/animehunch.com/wp-content/uploads/2020/08/Betty-with-the-Witch-Gospel.jpg?fit=1079%2C611&ssl=1);
+  background-size: cover;
+}
+.item-2 {
+  background-color: red;
+}
+.item-3 {
+  background-color: red;
+}
+@media screen and (min-width: 576px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "one one two three three " "one one four five five"
+      "six seven seven five five" "six eight nine nine ten";
+  }
+  .item-1 {
+    background-color: red;
+    grid-area: one;
+  }
+  .item-2 {
+    background-color: blue;
+    grid-area: two;
+  }
+  .item-3 {
+    background-color: green;
+    grid-area: three;
+  }
+  .item-4 {
+    background-color: yellow;
+    grid-area: four;
+  }
+  .item-5 {
+    background-color: aqua;
+    grid-area: five;
+  }
+
+  .item-6 {
+    background-color: chartreuse;
+    grid-area: six;
+  }
+  .item-7 {
+    background-color: chocolate;
+    grid-area: seven;
+  }
+  .item-8 {
+    background-color: cornflowerblue;
+    grid-area: eight;
+  }
+  .item-9 {
+    background-color: coral;
+    grid-area: nine;
+  }
+  .item-10 {
+    background-color: darkgoldenrod;
+    grid-area: ten;
+  }
+}
